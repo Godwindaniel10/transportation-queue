@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LogisticQueue from "./components/LogisticQueue";
+import Planner from "./components/Planner";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[#50AEAE] min-w-[1800px] mx-auto min-h-screen flex justify-between items-center gap-x-12 px-[50px]">
+      <LogisticQueue />
+      <Planner />
     </div>
   );
 }
